@@ -1,0 +1,33 @@
+:root {
+    --clr-sidebar: #051e34;
+    --clr-topbar: #1b72e8;
+    --clr-grey: #6c757d;
+    --clr-orange: #ff8f00;
+}
+
+header {
+    height: 5rem;
+    background-color: aqua;
+}
+
+.my_navbar {
+    background-color: var(--clr-sidebar);
+    height: calc(100vh - 5rem);
+}
+
+.my_navbar a {
+    color: white;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    cursor: pointer;
+}
+
+.my_navbar li {
+    transition: background-color 400ms;
+    padding: 0.5rem 0;
+}
+
+.my_navbar li:hover {
+    background-color: rgba(255,255,255,0.3);
+    --bs-nav-link-hover-color: white;
+}
