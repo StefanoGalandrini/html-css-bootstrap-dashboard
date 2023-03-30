@@ -29,8 +29,11 @@ header img.small {
     width: 60px;
 }
 
-.my_navbar {
+nav {
     background-color: var(--clr-sidebar);
+}
+
+.my_navbar {
     height: calc(100vh - 5rem);
 }
 
@@ -48,4 +51,59 @@ header img.small {
 .my_navbar li:hover {
     background-color: rgba(255,255,255,0.3);
     --bs-nav-link-hover-color: white;
+}
+
+main .my_top {
+    background-color: #1B72E8;
+    padding: 1rem;
+
+}
+
+main .my_badge_text {
+    font-size: 0.8rem;
+    font-weight: normal;
+    background-color: #165BBA;
+}
+
+main .new_student {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .new_student .add {
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+    nav {
+        width: 130px;
+    }
+
+    main {
+        width: calc(100% - 130px);
+        margin-left: 130px;
+    }
+}
+
+@media (max-width: 575px) {
+    nav {
+        width: 60px;
+    }
+
+    main {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+    }
 }
