@@ -21,7 +21,7 @@
             <div class="text-secondary contents d-flex align-items-center gap-4 pe-3">
                 <img class="d-none d-sm-block" src="img/logo.svg" alt="">
                 <img class="small img d-block d-sm-none" src="img/mobile-logo.png" alt="">
-                <div class="input-group p-2 bg-secondary-subtle rounded">
+                <div class="input-group p-1 bg-secondary-subtle rounded">
                     <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
                     <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel"
                         aria-label="Username" aria-describedby="basic-addon1">
@@ -75,32 +75,125 @@
     <main>
 
         <div class="container-fluid my_top text-white">
-            <div class="row align-items-center">
-                <div class="col-6">
+            <div class="row align-items-center g-col-6">
+                <div class="col-md-3 col-12 order-md-last">
+                    <div class="new_student d-flex justify-content-md-end align-items-center">
+                        <div>Nuovo Studente</div>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                            <div class="add d-flex justify-content-center align-items-center rounded">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </button>
+
+                        <!-- offcanvas content -->
+                        <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                            aria-labelledby="staticBackdropLabel">
+                            <div class="offcanvas-header">
+                                <h4 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <form>
+                                <div class="offcanvas-body">
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-sm-12 col-md-6">
+                                            <label for="first_name" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="first_name">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <label for="last_name" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="last_name">
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-sm-12 col-md-6">
+                                            <label for="email" class="form-label">Email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="email" class="form-control" id="email"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password">
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-sm-12">
+                                            <label for="address" class="form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="address">
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-sm-6">
+                                            <label for="city" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="city">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label for="state" class="form-label">Stato</label>
+                                            <select id="state" class="form-select">
+                                                <option selected>Scegli...</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <label for="cap" class="form-label">CAP</label>
+                                            <input type="text" class="form-control" id="CAP">
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3">
+                                        <div class="mb-5">
+                                            <label for="file" class="form-label">Foto</label>
+                                            <input class="form-control" type="file" id="file">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check mb-5">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">Seleziona per
+                                            proseguire</label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Salva</button>
+                                    <button type="submit" class="btn btn-warning">Svuota</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12 my-3">
                     <div class="contents">
                         <h1>Boolean <span class="badge rounded-pill my_badge_text">Piano blaze</span></h1>
                         <span class="badge rounded-pill my_badge_text">3 app</span>
                         <i class="fa-solid fa-angles-right"></i>
-                        <span class="badge rounded-pill my_badge_text">Boolean mobile app</span>
-                        <span class="badge rounded-pill my_badge_text">Boolean web app</span>
-                        <span class="badge rounded-pill my_badge_text">Boolean blog app</span>
+                        <span class="d-md-none d-inline badge rounded-pill my_badge_text">+</span>
+                        <span class="d-md-inline d-none badge rounded-pill my_badge_text">Boolean mobile app</span>
+                        <span class="d-md-inline d-none badge rounded-pill my_badge_text">Boolean web app</span>
+                        <span class="d-md-inline d-none badge rounded-pill my_badge_text">Boolean blog app</span>
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-md-3 col-12 my-3">
                     <div>Studenti online negli ultimi 30 minuti</div>
                     <h2>125</h2>
                 </div>
 
-                <div class="col-3">
-                    <div class="new_student">
-                        <div>Nuovo Studente</div>
-                        <div class="add d-flex justify-content-center align-items-center rounded"><i
-                                class="fa-solid fa-plus"></i></div>
-                    </div>
-                </div>
+
+
+
 
             </div>
+        </div>
+
+        </div>
 
         </div>
 
