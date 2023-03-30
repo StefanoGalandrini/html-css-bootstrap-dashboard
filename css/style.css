@@ -8,6 +8,7 @@
 
 header {
     height: var(--header-height);
+    z-index: 10
 }
 
 header .container-fluid {
@@ -27,7 +28,6 @@ header .input-group input {
 header img.small {
     width: 60px;
 }
-
 
 .my_navbar {
     background-color: var(--clr-sidebar);
