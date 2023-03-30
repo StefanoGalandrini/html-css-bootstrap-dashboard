@@ -3,12 +3,31 @@
     --clr-topbar: #1b72e8;
     --clr-grey: #6c757d;
     --clr-orange: #ff8f00;
+    --header-height: 5rem;
 }
 
 header {
-    height: 5rem;
-    background-color: aqua;
+    height: var(--header-height);
 }
+
+header .container-fluid {
+    height: var(--header-height);
+}
+
+header .contents {
+    height: 100%;
+}
+
+header .input-group span,
+header .input-group input {
+    border: none;
+    background-color: transparent;
+}
+
+header img.small {
+    width: 60px;
+}
+
 
 .my_navbar {
     background-color: var(--clr-sidebar);
