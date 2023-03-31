@@ -12,11 +12,11 @@ html {
 
 header {
     height: var(--header-height);
-    /* position: fixed; */
+    position: fixed;
 	overflow: hidden;
-	/* top: 0;
+	top: 0;
 	left: 0;
-	right: 0; */
+	right: 0;
     padding-left: 0.5rem;
     z-index: 1
 }
