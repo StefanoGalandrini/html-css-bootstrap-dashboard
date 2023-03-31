@@ -22,9 +22,9 @@
                 <img class="d-none d-sm-block" src="img/logo.svg" alt="">
                 <img class="small img d-block d-sm-none" src="img/mobile-logo.png" alt="">
                 <div class="input-group p-1 bg-secondary-subtle rounded">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
                     <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel"
-                        aria-label="Username" aria-describedby="basic-addon1">
+                        aria-label="Cerca">
                 </div>
                 <i class="d-none d-sm-block fa-solid fa-list"></i>
                 <i class="d-none d-sm-block fa-solid fa-circle-question"></i>
@@ -45,26 +45,29 @@
     </header>
 
     <nav class="navbar position-fixed bottom-0 left-0 py-0">
-        <div class="container-fluid flex-column align-items-start px-0">
-            <ul class="my_navbar navbar-nav px-2 py-3">
+        <div class="container-fluid flex-column align-items-sm-center px-0">
+            <ul class="my_navbar navbar-nav align-items-center align-items-sm-start px-2 py-3">
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-3" href="#"><i class="fa-solid fa-house"></i>
+                    <a class="nav-link d-flex justify-content-center align-items-sm-center gap-2" href="#"><i
+                            class="fa-solid fa-house"></i>
                         <div class="d-none d-sm-inline"> Home</div>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-3" href="#"><i
-                            class="fa-solid fa-chart-simple"></i>
+                    <a class="nav-link d-flex justify-content-center justify-content-sm-start align-items-sm-center gap-2"
+                        href="#"><i class="fa-solid fa-chart-simple"></i>
                         <div class="d-none d-sm-inline"> Stats</div>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-3" href="#"><i class="fa-solid fa-signal"></i>
+                    <a class="nav-link d-flex justify-content-center align-items-center gap-2" href="#"><i
+                            class="fa-solid fa-signal"></i>
                         <div class="d-none d-sm-inline"> Signal</div>
                     </a>
                 </li>
                 <li class="nav-item mt-auto">
-                    <a class="nav-link d-flex align-items-center gap-3" href="#"><i class="fa-solid fa-gear"></i>
+                    <a class="nav-link d-flex justify-content-center align-items-center gap-2" href="#"><i
+                            class="fa-solid fa-gear"></i>
                         <div class="d-none d-sm-inline"> Admin</div>
                     </a>
                 </li>
@@ -74,16 +77,15 @@
 
     <main>
 
+        <!-- top bar -->
         <div class="container-fluid my_top text-white">
             <div class="row align-items-center g-col-6">
-                <div class="col-md-3 col-12 order-md-last">
-                    <div class="new_student d-flex justify-content-md-end align-items-center">
-                        <div>Nuovo Studente</div>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                <div class="col-sm-3 col-12 order-sm-last">
+                    <div class="new_student d-flex flex-sm-wrap justify-content-sm-end align-items-center">
+                        <div class="text-center">Nuovo Studente</div>
+                        <button class="btn btn-primary add ms-2" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                            <div class="add d-flex justify-content-center align-items-center rounded">
-                                <i class="fa-solid fa-plus"></i>
-                            </div>
+                            <i class="fa-solid fa-plus"></i>
                         </button>
 
                         <!-- offcanvas content -->
@@ -112,9 +114,8 @@
                                         <div class="col-sm-12 col-md-6">
                                             <label for="email" class="form-label">Email</label>
                                             <div class="input-group">
-                                                <span class="input-group-text" id="basic-addon1">@</span>
-                                                <input type="email" class="form-control" id="email"
-                                                    aria-describedby="emailHelp">
+                                                <span class="input-group-text">@</span>
+                                                <input type="email" class="form-control" id="email">
                                             </div>
                                         </div>
                                         <div class="col-sm-12 col-md-6">
@@ -144,7 +145,7 @@
                                         </div>
                                         <div class="col-sm-2">
                                             <label for="cap" class="form-label">CAP</label>
-                                            <input type="text" class="form-control" id="CAP">
+                                            <input type="text" class="form-control" id="cap">
                                         </div>
                                     </div>
 
@@ -169,10 +170,10 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-12 my-3">
+                <div class="col-sm-6 col-12 my-3">
                     <div class="contents">
                         <h1>Boolean <span class="badge rounded-pill my_badge_text">Piano blaze</span></h1>
-                        <span class="badge rounded-pill my_badge_text">3 app</span>
+                        <span class="badge rounded-pill my_badge_text mb-2">3 app</span>
                         <i class="fa-solid fa-angles-right"></i>
                         <span class="d-md-none d-inline badge rounded-pill my_badge_text">+</span>
                         <span class="d-md-inline d-none badge rounded-pill my_badge_text">Boolean mobile app</span>
@@ -181,21 +182,16 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-12 my-3">
+                <div class="col-sm-3 col-12 my-3">
                     <div>Studenti online negli ultimi 30 minuti</div>
                     <h2>125</h2>
                 </div>
-
-
-
-
-
             </div>
         </div>
 
-        </div>
+        <!-- central main contents -->
 
-        </div>
+
 
 
 

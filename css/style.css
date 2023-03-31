@@ -41,16 +41,27 @@ nav {
     color: white;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+    width: 100%;
+}
+
+.my_navbar a i {
+    flex: 0 0 20px;
+    text-align: center;
 }
 
 .my_navbar li {
     transition: background-color 400ms;
     padding: 0.5rem 0;
+    width: 100%;
 }
 
 .my_navbar li:hover {
     background-color: rgba(255,255,255,0.3);
     --bs-nav-link-hover-color: white;
+}
+
+main {
+    overflow-y: auto;
 }
 
 main .my_top {
@@ -105,7 +116,7 @@ main .offcanvas {
 
 @media (min-width: 992px) {
     main .new_student .offcanvas {
-        --bs-offcanvas-width: 50vw;
+        --bs-offcanvas-width: 45vw;
     }
 }
 
