@@ -12,13 +12,13 @@ html {
 
 header {
     height: var(--header-height);
-    position: fixed;
+    /* position: fixed; */
 	overflow: hidden;
-	top: 0;
+	/* top: 0;
 	left: 0;
-	right: 0;
+	right: 0; */
     padding-left: 0.5rem;
-    z-index: 10
+    z-index: 1
 }
 
 header .container-fluid {
@@ -81,7 +81,7 @@ main {
     right: 0;
     bottom: 0;
     overflow-y: auto;
-    z-index: -5;
+    z-index: 2;
 }
 
 main .my_top {
@@ -103,6 +103,17 @@ main .new_student .add {
 
 main .offcanvas {
     overflow-y: auto;
+    z-index: 100;
+}
+
+.offcanvas-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
 }
 
 main .card img.avatar {
