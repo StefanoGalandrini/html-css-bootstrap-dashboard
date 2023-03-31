@@ -31,6 +31,10 @@ header img.small {
 
 nav {
     background-color: var(--clr-sidebar);
+    background-image: url(../img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 .my_navbar {
