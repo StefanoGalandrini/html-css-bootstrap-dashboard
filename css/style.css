@@ -80,14 +80,12 @@ main {
     top: var(--header-height);
     right: 0;
     bottom: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     z-index: -5;
 }
 
 main .my_top {
     background-color: #1B72E8;
-    padding: 1rem;
-
 }
 
 main .my_badge_text {
@@ -128,7 +126,7 @@ main .card table .my_badge {
     }
     
     main {
-        width: calc(100% - 130px);
+        width: calc(100vw - 130px);
         margin-left: 130px;
     }
 }
@@ -139,7 +137,7 @@ main .card table .my_badge {
     }
 
     main {
-        width: calc(100% - 60px);
+        width: calc(100vw - 60px);
         margin-left: 60px;
     }
 }
