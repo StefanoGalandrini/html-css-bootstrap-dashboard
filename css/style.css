@@ -12,11 +12,11 @@ html {
 
 header {
     height: var(--header-height);
-    position: fixed;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	right: 0;
+    /* position: fixed; */
+    /* overflow: hidden; */
+    /* top: 0;
+    left: 0;
+    right: 0; */
     padding-left: 0.5rem;
     z-index: 1
 }
@@ -71,7 +71,7 @@ nav {
 }
 
 .my_navbar li:hover {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     --bs-nav-link-hover-color: white;
 }
 
@@ -135,7 +135,7 @@ main .card table .my_badge {
     nav {
         width: 130px;
     }
-    
+
     main {
         width: calc(100vw - 130px);
         margin-left: 130px;
